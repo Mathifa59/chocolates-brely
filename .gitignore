@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.sites-runtime/
+.sites-manifest/
+.sites-runtime.json
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+qa/
+deployment.tar.gz
