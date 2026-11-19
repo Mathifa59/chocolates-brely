@@ -24,7 +24,7 @@ npm run preview
 
 1. Copia `.env.example` como `.env.local`.
 2. Cambia `VITE_WHATSAPP_NUMBER=519XXXXXXXX` por tu número real, con código de país y sin `+`, espacios ni guiones.
-3. Cambia `VITE_STORE_NAME` por el nombre de tu negocio. **“Un antojo” es un nombre comercial provisional**, no el nombre del fabricante.
+3. Cambia `VITE_STORE_NAME` por el nombre de tu negocio. El valor por defecto es “Machu Picchu”, la marca del fabricante, mostrada junto a la etiqueta “Distribuidor”.
 4. Agrega precios y disponibilidad confirmados en `src/data/products.ts` si deseas mostrarlos.
 5. Confirma la lista completa de ingredientes y alérgenos con el fabricante; las fotos muestran el frente del empaque y no permiten confirmar esa información.
 

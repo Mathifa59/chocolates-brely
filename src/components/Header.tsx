@@ -6,7 +6,7 @@ import { WhatsAppLink } from './WhatsApp'
 export function Brand({ light = false }: { light?: boolean }) {
   return <a className={`brand ${light ? 'brand-light' : ''}`} href="#inicio" aria-label={`${store.name}, ir al inicio`}>
     <span className="brand-mark" aria-hidden="true">{Array.from({ length: 6 }, (_, i) => <i key={i} />)}</span>
-    <span>{store.name.toLowerCase()}<span className="brand-period">.</span><small>BARRAS DE CHOCOLATE</small></span>
+    <span>{store.name.toLowerCase()}<span className="brand-period">.</span><small>DISTRIBUIDOR DE CHOCOLATE</small></span>
   </a>
 }
 
