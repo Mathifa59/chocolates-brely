@@ -2,7 +2,7 @@ export const store = {
   // PENDIENTE: reemplazar nombre comercial y WhatsApp, o utilizar .env.local.
   name: import.meta.env.VITE_STORE_NAME || 'Un antojo',
   nameIsPlaceholder: !import.meta.env.VITE_STORE_NAME,
-  whatsappNumber: import.meta.env.VITE_WHATSAPP_NUMBER || '519XXXXXXXX',
+  whatsappNumber: import.meta.env.VITE_WHATSAPP_NUMBER || '51981916198',
   manufacturer: 'Machu Picchu',
 }
 

@@ -5,7 +5,13 @@ import { FlavorRibbon, IngredientsSection } from './components/IngredientsSectio
 import { WhatsAppCTA } from './components/WhatsAppCTA'
 import { WhatsAppFloatingButton, WhatsAppProvider } from './components/WhatsApp'
 import { Footer } from './components/Footer'
+import { useScrollEffects } from './hooks/useScrollEffects'
 
 export default function App() {
-  return <WhatsAppProvider><div id="inicio"><Header /><main id="contenido"><Hero /><FlavorRibbon /><ProductCatalog /><IngredientsSection /><WhatsAppCTA /></main><Footer /><WhatsAppFloatingButton /></div></WhatsAppProvider>
+  useScrollEffects()
+  return <WhatsAppProvider><div id="inicio">
+    <div className="progress" aria-hidden="true" />
+    <div className="ambient" aria-hidden="true"><i /><i /><i /></div>
+    <Header /><main id="contenido"><Hero /><FlavorRibbon /><ProductCatalog /><IngredientsSection /><WhatsAppCTA /></main><Footer /><WhatsAppFloatingButton />
+  </div></WhatsAppProvider>
 }
