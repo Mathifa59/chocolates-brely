@@ -129,6 +129,9 @@ h1 em{background:linear-gradient(100deg,#9e573a 10%,var(--gold) 45%,#b4532f 70%,
 .ingredients-visual .product-cutout{filter:drop-shadow(10px 20px 14px #00000066)}
 
 /* ---------- Cierre ---------- */
+.closing-section{padding-top:88px;padding-bottom:72px}
+@media(max-width:850px){.closing-section{padding-top:64px;padding-bottom:56px}}
+@media(max-width:640px){.closing-section{padding-top:48px;padding-bottom:44px}}
 .closing-cta{background:radial-gradient(620px 320px at 88% 0%,#c58b3c40,transparent 70%),linear-gradient(135deg,#46291f,#2c1a13 58%,#4a2e22)}
 .closing-cta:before{animation:breathe 10s ease-in-out infinite}
 .closing-cta:after{animation:breathe 12s ease-in-out -4s infinite}
@@ -137,9 +140,11 @@ h1 em{background:linear-gradient(100deg,#9e573a 10%,var(--gold) 45%,#b4532f 70%,
 .closing-copy h2 em{color:var(--gold-soft)}
 
 /* ---------- Botón flotante y diálogo ---------- */
-.whatsapp-float{animation:fadeUp .9s var(--ease) 2s backwards;transition:background-color .3s,transform .4s var(--ease),box-shadow .4s}
-.whatsapp-float:before{content:'';position:absolute;inset:-1px;border-radius:inherit;border:2px solid #6f9060;animation:ring 3s ease-out infinite;pointer-events:none}
-.whatsapp-float:hover{box-shadow:0 12px 30px -8px #26322388}
+.whatsapp-float{background:linear-gradient(135deg,#25b866,#128c4a);color:#fff;border:0;box-shadow:0 10px 26px -8px #128c4a99,0 2px 6px #00000022;animation:fadeUp .9s var(--ease) 2s backwards;transition:filter .3s,transform .4s var(--ease),box-shadow .4s}
+.whatsapp-float:before{content:'';position:absolute;inset:0;border-radius:inherit;background:#25b866;z-index:-1;animation:ring 3.2s ease-out infinite;pointer-events:none}
+.whatsapp-float{isolation:isolate}
+.whatsapp-float:hover{background:linear-gradient(135deg,#2bc971,#15a055);filter:saturate(1.05);box-shadow:0 14px 32px -8px #128c4acc,0 2px 6px #00000022}
+.float-label{font-size:11px;font-weight:600}
 .contact-dialog[open]{animation:popIn .5s var(--ease)}
 .contact-dialog[open]::backdrop{animation:fadeIn .4s ease}
 
@@ -161,7 +166,7 @@ h1 em{background:linear-gradient(100deg,#9e573a 10%,var(--gold) 45%,#b4532f 70%,
 @keyframes marquee{to{translate:-50% 0}}
 @keyframes breathe{50%{scale:1.07}}
 @keyframes draw{from{stroke-dasharray:1;stroke-dashoffset:1}to{stroke-dasharray:1;stroke-dashoffset:0}}
-@keyframes ring{0%{scale:1;opacity:.7}100%{scale:1.5;opacity:0}}
+@keyframes ring{0%{scale:1;opacity:.45}70%,100%{scale:1.35;opacity:0}}
 @keyframes popIn{from{opacity:0;translate:0 24px;scale:.94}}
 
 @media(max-width:850px){
